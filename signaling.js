@@ -13,5 +13,8 @@ function Signaling(state, model, password) {
         return this.off;
       }
     };
-  }
+
+    return this._password;
+  };
+
 }
