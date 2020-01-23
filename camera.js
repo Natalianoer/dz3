@@ -16,8 +16,11 @@ function Camera(state, mode, record, live) {
     };
 
     this.getType = function () {
-      if ((type = this._record) || (type = this._live)) {
-        return this._state;
+      if (this._record == true) {
+          return this._state;
+      }
+      if (this._live == true) {
+          return this._state;
       }
     };
 
